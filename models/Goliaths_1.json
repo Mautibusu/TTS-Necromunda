@@ -47,7 +47,8 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_1/Goliaths_1.obj",
+        "MeshURL": "
+		https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_1/Goliaths_1.obj",
         "DiffuseURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/raw/Goliaths_1/Goliaths_1.jpg",
         "NormalURL": "",
         "ColliderURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/models/cylinder.obj",
