@@ -1,0 +1,79 @@
+{
+  "SaveName": "",
+  "GameMode": "",
+  "Date": "",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "Rules": "",
+  "TabStates": {},
+  "ObjectStates": [
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.656379,
+        "posY": 1.25664282,
+        "posZ": 9.32653,
+        "rotX": -1.30243261E-05,
+        "rotY": -1.3660374E-05,
+        "rotZ": -4.4561395E-05,
+        "scaleX": 0.8750001,
+        "scaleY": 0.8750001,
+        "scaleZ": 0.8750001
+      },
+      "Nickname": "Goliath_1",
+      "Description": "Scanned by C.Quinson",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_1/Goliaths_1.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/raw/Goliaths_1/Goliaths_1.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/models/cylinder.obj",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "927557"
+    }
+  ],
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "VersionNumber": ""
+}
