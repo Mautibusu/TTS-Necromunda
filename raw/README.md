@@ -22,6 +22,6 @@ It also contains material and information about creating your own models, and im
 	
 - from TTS, save your properly scaled model in the "models" folder.
 - place your final .obj and .jpg (model and texture) in the "models" folder.
-- edit the .json file to fix the paths, depending on where you installed TTS.
+- edit the .json file to fix the paths, to point to the right spot on github (look at other json files to understand howto)
 
 You can commit your changes back to the repository at any stage, from github desktop. It is good practice to add some infos about what you have done for each commit.
