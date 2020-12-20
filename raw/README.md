@@ -64,21 +64,20 @@ This method is what works best. Use a small brush, place blue dots on all areas 
 The software will compute the mask: a red highlight over all of the miniature. Check that no background is highlighted, and no miniature isn't.
 You can correct this with the lasso tool (and +/- to add or remove from the mask)
 
+Make sure you have a mask for every picture.
 #### Point clouds
-This take forever to compute. It's done in two steps: sparse, and dense point clouds.
+Import all 50 images and masks, then check the camera settings (should be done automatically).
 
-Sparse point cloud parameters:
-{screenshot?}
-- X
-- Y
-- Z
-Run, it will take a while... Once finished, make sure that all cameras have worked OK, otherwise redo previous steps.
+Creating the pointcloud is done in two steps: sparse, and dense point clouds.
+
+Select Advanced, then for the sparse point cloud parameters:
+![Sparse cloud parameters](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_sparse-params1.png)
+Then hit run. It will take a while... but masking reduces the amount of data your computer has to process.
+
+Once finished, make sure that all cameras have worked OK, otherwise redo previous steps.
 
 Dense point clouds parameters (select Advanced) :
 {screenshot?}
-- X
-- Y
-- Z
 
 Hit next, then parameters (select advanced) :
 {screenshot?}
@@ -100,7 +99,7 @@ Here are the steps to select and then remove bad points:
 
 #### Meshes
 In this step, the point clouds are processed to generate a 3D model and a texture.
-
+Go to Workflow->Advanced->Mesh Extraction
 Mesh parameters (select Advanced) :
 {screenshot?}
 - Number of nearest Cameras: 3
