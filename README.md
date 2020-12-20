@@ -1,10 +1,12 @@
 # TTS-Necromunda
-Table Top Simulator Assets for the game Necromunda
+Table Top Simulator (TTS) Assets for the game Necromunda.
 
-# Background info about TTS and the models
+{intro text and overview of contents}
+
+### Background info about TTS and the models
 {summary of things that matter for users and content creators + pointers}
 
-# How to use models:
+### How to use models in TTS:
 From the Steam Workshop:
 - look for the collection "Necromunda: 3D Scanned Models" by UristMcDerp.
 - Fastest, but might not be 100% up to date with the models in this repo (could have more, could have less).
@@ -30,8 +32,10 @@ Notes:
 - Scale your model in TTS, and save it as an object.
 - See the "contribute" section for a detailed workflow
 
-# How-to contribute them to this repo:
+See in "doc" for more details.
+
+# How-to contribute to this repo:
 {quick overview, pointers}
-See in "raw" for more details.
+See in "doc" for more details.
 
 
