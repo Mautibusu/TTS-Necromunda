@@ -71,7 +71,9 @@ Import all 50 images and masks, then check the camera settings (should be done a
 Creating the pointcloud is done in two steps: sparse, and dense point clouds.
 
 Select Advanced, then for the sparse point cloud parameters:
-![Sparse cloud parameters](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_sparse-params1.png?raw=true)
+
+![](doc/doc-scrnsht_sparse-params1.png?raw=true)
+
 Then hit run. It will take a while... but masking reduces the amount of data your computer has to process.
 
 Once finished, make sure that all cameras have worked OK, otherwise redo previous steps.
