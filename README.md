@@ -6,7 +6,7 @@ Table Top Simulator (TTS) Assets for the game Necromunda.
 ### Background info about TTS and the models
 {summary of things that matter for users and content creators + pointers}
 
-### How to use models in TTS:
+### How to use these models in TTS:
 From the Steam Workshop:
 - look for the collection "Necromunda: 3D Scanned Models" by UristMcDerp.
 - Fastest, but might not be 100% up to date with the models in this repo (could have more, could have less).
@@ -20,7 +20,7 @@ Extensive way:
 - If you follow the steps to contribute to this repo, you most likely have cloned the files in the proper location for TTS to directly show in "saved objects" the contents of the repo.
 - You can keep up to date with the latest releases by pulling the latest version from the git repo!
 
-# How-to create new models
+### How-to create new models
 {quick overview, pointers}
 - https://www.youtube.com/watch?v=zHlxPai-Knc
 - https://www.dicefromhell.de/how-to-scan-a-tabletop-miniature-part-1
@@ -34,8 +34,23 @@ Notes:
 
 See in "doc" for more details.
 
-# How-to contribute to this repo:
+### How-to contribute to this repo:
 {quick overview, pointers}
+
+#### Getting Started/Initialization
+Here are the preliminary steps to contribute to this repo:
+- install Zephyr and Blender.
+- create a Github accound and install GitHub Desktop
+- clone the repo on your computer. Potentially into your TTS Saved objects folder (
+- prepare your photo setup
+
+
+- create github account
+- install github desktop
+- clone repo
+- install zephyr, blender
+- prepare your photo setup
+
 See in "doc" for more details.
 
 

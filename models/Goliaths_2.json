@@ -1,0 +1,79 @@
+{
+  "SaveName": "",
+  "GameMode": "",
+  "Date": "",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "Rules": "",
+  "TabStates": {},
+  "ObjectStates": [
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.68834,
+        "posY": 0.955779,
+        "posZ": -1.70190787,
+        "rotX": 7.71164E-08,
+        "rotY": 180.0,
+        "rotZ": -7.29801059E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "file:///C:\\Users\\Clément Quinson\\Documents\\My Games\\Tabletop Simulator\\Saves\\Saved Objects\\TTS-Necromunda\\raw\\Goliaths_2\\Goliaths_2_blender.obj",
+        "DiffuseURL": "file:///C:\\Users\\Clément Quinson\\Documents\\My Games\\Tabletop Simulator\\Saves\\Saved Objects\\TTS-Necromunda\\raw\\Goliaths_2\\Goliaths_2.jpg",
+        "NormalURL": "",
+        "ColliderURL": "file:///C:\\Users\\Clément Quinson\\Documents\\My Games\\Tabletop Simulator\\Saves\\Saved Objects\\TTS-Necromunda\\models\\bases\\Disc_32mm.obj",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "e28836"
+    }
+  ],
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "VersionNumber": ""
+}

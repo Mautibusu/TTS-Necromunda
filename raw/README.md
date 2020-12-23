@@ -3,13 +3,7 @@ This section is intended to store the intermediary files needed to create models
 
 It also contains material and information about creating your own models, and importing them in TTS, to explain how to contribute to this repository.
 
-## Getting Started/Initialization
-Here are the preliminary steps to contribute to this repo:
-- create github account
-- install github desktop
-- clone repo
-- install zephyr, blender
-- prepare your photo setup
+
 
 ## Workflow Overview to contribute to this repo
 You can commit your changes back to the repository at any stage, from github desktop. It is good practice to add some infos about what you have done for each commit.
@@ -52,13 +46,23 @@ Ensure a good input otherwise the reconstruction will fail or be poor. You can g
 ### Image processing with Zephyr
 There are other software to do this, but Zephyr works beautifully. You can use the free or lite version. Free is limited to 50 images, but that's usually enough.
 
-There are several processing steps once you have imported your images: masking, point cloud generation, point cloud cleaning, mesh generation and cleaning, then export.
-The end result is a 3D volume and a texture.
+Note that from one run to another, Zephyr keeps your settings, so you don't have to review them too closely each time.
+Of course, you should also do your own experiments, and the parameters hereafter are just some that have worked for us.
+
+There are several processing steps once you have imported your images:
+- masking, where you tell the software where to focus its analysis
+- point cloud generation, where the software does a first level of image matching and reconstruction
+- point cloud cleaning, where you remove some points that are artefacts
+- mesh and textured mesh generation, where you generate the final shape and texture
+- export of 3D object and texture, where you get the end result ready to be further processed.
 
 #### Masking
 For each picture, you want to tell the software what is the object to reconstruct, and what is background. There are several ways to achieve that.
 If your background is perfect, you can select it by color. But it is not so great with DIY smartphone taken pictures...
 
+![Masking](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_masking1.png)
+![Masking](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_masking2.png)
+![Masking](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_masking3.png)
 You can also give examples to the software of what is background and what is object to reconstruct, with red dots (object) and blue dots (background).
 This method is what works best. Use a small brush, place blue dots on all areas of background, and a red dot on the miniature.
 The software will compute the mask: a red highlight over all of the miniature. Check that no background is highlighted, and no miniature isn't.
@@ -68,30 +72,30 @@ Make sure you have a mask for every picture.
 #### Point clouds
 Import all 50 images and masks, then check the camera settings (should be done automatically).
 
+
 Creating the pointcloud is done in two steps: sparse, and dense point clouds.
 
 Select Advanced, then for the sparse point cloud parameters:
-![Sparse cloud parameters](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_sparse-params1.png)
+<a href="url"><img src="/doc/doc-scrnsht_sparse-params1.png" align="center" width="600" ></a>
 Then hit run. It will take a while... but masking reduces the amount of data your computer has to process.
 
-Once finished, make sure that all cameras have worked OK, otherwise redo previous steps.
+Once finished, make sure that the reconstruction is successful, and that all cameras have a 'YES'.
+If that is not the case, you need to review your masking and/or picture taking process.
 
-Dense point clouds parameters (select Advanced) :
-{screenshot?}
+You can also have a look around at the sparse point cloud, if something looks weird or not covered at this stage, later stages will not work.
 
-Hit next, then parameters (select advanced) :
-{screenshot?}
-- X
-- Y
-- Z
 
-Hit "Run", it will also take a while (15mn).
+Select Workflow->Advanced->Dense point cloud generation, and use these parameters :
+<a href="url"><img src="/doc/doc-scrnsht_dense-params1.png" align="center" width="600" ></a>
+
+Hit "Run", it will also take a while.
 
 Once finished, check the resulting point cloud. If anything looks wrong, go back and redo previous steps.
 
+The next step is cleaning of the point cloud and removing noise, eg points that should not be used when reconstructing the mesh.
+First, you should clone the Dense point cloud, in case you clean "too much" and need to get back.
 
-Then, remove noise, eg points that should not be used when reconstructing the mesh.
-Here are the steps to select and then remove bad points:
+Then, here are the steps to select and then delete bad points:
 - plane to remove under base/around base
 - view from all angles, and lasso.
 - selection by color: pick bright white, then adjust threshold.
@@ -100,6 +104,9 @@ Here are the steps to select and then remove bad points:
 #### Meshes
 In this step, the point clouds are processed to generate a 3D model and a texture.
 Go to Workflow->Advanced->Mesh Extraction
+
+Make sure to select the Dense point cloud that you just cleaned.
+
 Mesh parameters (select Advanced) :
 {screenshot?}
 - Number of nearest Cameras: 3
@@ -111,26 +118,31 @@ Mesh parameters (select Advanced) :
 - Update colors: On
 
 Hit next, then parameters (select advanced) :
-{screenshot?}
-- smoothness: 2 iterations
-- Watertightness: 10%
-- Update colors: yes
-- Image resolution: 75%
-- High frequency gain: 0.5
-- Enhance filter: 0.25
-- Edge filter: 0
+<a href="url"><img src="/doc/doc-scrnsht_mesh-params1.png" align="center" width="600" ></a>
 
 Hit "Run", it will also take a while (15mn).
 
-Once finished, check the resulting model.
+Once finished, check if it worked. If not, go back to your original dense point cloud, and do less cleaning.
 
+At that point, you also want to clean-up the mesh. Again, select "clone and apply" in case something goes wrong you can try again with different parameters. The steps are:
+- retopology, to uniformize the vertices (factor 2, 5 iterations, and update the colors)
+- decimate, to reduce the number of vertices to 25.000 or less (max number that TTS will import)
 
-Textured mesh parameters:
-- X 
-- Y
-- Z
+Then finally, you can generate the textured mesh. Use these parameters:
+<a href="url"><img src="/doc/doc-scrnsht_textured-mesh-params1.png" align="center" width="600" ></a>
+
+- max texture size 2k
+img resolution 100%
+max vertices 25000
+sharpening 25%
+default color balance.
+
 
 #### Export
+Export textured mesh: select wavefront obj/mtl, and export as single texture.
+
+- have done the process a few times, and have a good and reliable
+Note that once you:
 
 ### Model cleanup with Blender
 
