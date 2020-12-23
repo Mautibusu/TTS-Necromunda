@@ -1,13 +1,13 @@
-newmtl Goliaths_2
-Kd 1.0 1.0 1.0
-Ka 0.0 0.0 0.0
-Ks 0.0 0.0 0.0
-d 1.0
-Ns 0.0
-illum 0
-map_Kd Goliaths_2.jpg
+# Blender MTL File: 'None'
+# Material Count: 1
 
-
-
-
-#EOF
+newmtl Goliaths_3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Goliaths_3.jpg
