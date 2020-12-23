@@ -60,9 +60,9 @@ There are several processing steps once you have imported your images:
 For each picture, you want to tell the software what is the object to reconstruct, and what is background. There are several ways to achieve that.
 If your background is perfect, you can select it by color. But it is not so great with DIY smartphone taken pictures...
 
-![Masking](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_masking1.png)
-![Masking](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_masking2.png)
-![Masking](https://github.com/Mautibusu/TTS-Necromunda/tree/main/doc/doc-scrnsht_masking3.png)
+<a href="url"><img src="doc-scrnsht_masking1.png" align="center" width="600" ></a>
+<a href="url"><img src="doc-scrnsht_masking2.png" align="center" width="600" ></a>
+<a href="url"><img src="doc-scrnsht_masking3.png" align="center" width="600" ></a>
 You can also give examples to the software of what is background and what is object to reconstruct, with red dots (object) and blue dots (background).
 This method is what works best. Use a small brush, place blue dots on all areas of background, and a red dot on the miniature.
 The software will compute the mask: a red highlight over all of the miniature. Check that no background is highlighted, and no miniature isn't.
@@ -76,7 +76,9 @@ Import all 50 images and masks, then check the camera settings (should be done a
 Creating the pointcloud is done in two steps: sparse, and dense point clouds.
 
 Select Advanced, then for the sparse point cloud parameters:
+
 <a href="url"><img src="/doc/doc-scrnsht_sparse-params1.png" align="center" width="600" ></a>
+
 Then hit run. It will take a while... but masking reduces the amount of data your computer has to process.
 
 Once finished, make sure that the reconstruction is successful, and that all cameras have a 'YES'.
