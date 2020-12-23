@@ -16,12 +16,12 @@
     {
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -7.68834,
-        "posY": 0.955779,
-        "posZ": -1.70190787,
-        "rotX": 7.71164E-08,
-        "rotY": 180.0,
-        "rotZ": -7.29801059E-07,
+        "posX": 0.00144280563,
+        "posY": 0.9599999,
+        "posZ": 0.8998455,
+        "rotX": -2.0097425E-06,
+        "rotY": 1.721005E-06,
+        "rotZ": 4.241723E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -47,10 +47,10 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_2/Goliaths_2_blender.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_2/Goliaths_2.jpg",
+        "MeshURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_3/Goliaths_3_blend.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_3/Goliaths_3.jpg",
         "NormalURL": "",
-        "ColliderURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/models/bases/DEAAD0D4F5771EC7613627CC0D74E011905986A8_BASE_32_2.obj",",
+        "ColliderURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/models/bases/DEAAD0D4F5771EC7613627CC0D74E011905986A8_BASE_32_2.obj",
         "Convex": true,
         "MaterialIndex": 3,
         "TypeIndex": 1,
@@ -69,7 +69,7 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "e28836"
+      "GUID": "8a1d3a"
     }
   ],
   "LuaScript": "",
