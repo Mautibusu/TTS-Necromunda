@@ -47,8 +47,8 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_7/Goliaths_7.obj",
-        "DiffuseURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_7/Goliaths_7.jpg",
+        "MeshURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_8/Goliaths_8.obj",
+        "DiffuseURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/raw/Goliaths_8/Goliaths_8.jpg",
         "NormalURL": "",
         "ColliderURL": "https://raw.githubusercontent.com/Mautibusu/TTS-Necromunda/main/models/bases/DEAAD0D4F5771EC7613627CC0D74E011905986A8_BASE_32_2.obj",
         "Convex": true,
