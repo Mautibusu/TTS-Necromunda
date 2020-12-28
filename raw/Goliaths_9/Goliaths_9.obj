@@ -1,7 +1,7 @@
 # Blender v2.91.0 OBJ File: ''
 # www.blender.org
 mtllib Goliaths_9.mtl
-o Goliaths_9
+o Goliaths_9_zephyr
 v -0.218750 0.207064 0.165601
 v -0.392011 0.207641 0.375134
 v -0.403967 0.200713 0.381622
@@ -38452,7 +38452,6 @@ vn 0.1763 0.6216 -0.7632
 vn -0.9200 0.3910 0.0267
 vn -0.3822 0.9148 0.1308
 vn 0.8883 -0.2051 0.4109
-g Goliaths_9_zephyr_Goliaths_9_zephyr_Goliaths_9_zephyr
 usemtl Goliaths_9_zephyr
 s 1
 f 6/1/1 7/2/2 8/3/3
